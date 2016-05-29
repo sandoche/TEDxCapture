@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+.text-justify
+{
+  text-align: justify;
+}
+
+
+.in-link
+{
+  color: #e62b1e;
+  text-decoration: none;
+}
+
+.img-responsive
+{
+  max-width: 100%;
+  height: auto;
+}
+
+.popup-body {
+  padding: 10px;
+  overflow: hidden;
+}

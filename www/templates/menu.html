@@ -1,0 +1,36 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">TEDxCapture</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item class="item item-icon-left" nav-clear menu-close href="#/app/capture">
+          <i class="icon ion-camera"></i>
+          Capture
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close href="#/app/follow-us">
+          <i class="icon ion-social-rss"></i>
+          Follow-us
+        </ion-item>
+        <ion-item class="item item-icon-left" nav-clear menu-close href="#/app/about">
+          <i class="icon ion-information-circled"></i>
+          About
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

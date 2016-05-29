@@ -1,0 +1,31 @@
+<ion-view view-title="<img src='img/logo.png' class='img-responsive' alt='Capture'>">
+  <ion-content  ng-controller="AppCtrl">
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="img/icon.png" class="img-responsive">
+        <h2>TEDxCapture</h2>
+        <p>Capture and spread photos</p>
+      </div>
+      <div class="item item-image">
+        <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+        <img ng-show="imgURI === undefined" class="img-responsive" ng-src="img/placeholder.png">
+      </div>
+      <a class="item item-icon-left assertive" ng-click="takePicture()" href="#">
+        <i class="icon ion-camera"></i>
+        Take a photo
+      </a>
+      <a ng-show="facebookSharing !== undefined" class="item item-icon-left assertive" style="color: #3B5998;" ng-click="sharePictureOnFacebook('Les nouveaux explorateurs de TEDxPanthéonSorbonne en image', null, 'http://www.tedxpantheonsorbonne.fr')" href="#">
+        <i class="icon ion-social-facebook"></i>
+        Spread on facebook
+      </a>
+      <a ng-show="twitterSharing !== undefined" class="item item-icon-left assertive" style="color: #4099FF;" ng-click="sharePictureOnTwitter('Les nouveaux explorateurs de TEDxPanthéonSorbonne en image #nouveauxexplorateurs @TEDxSorbonne', null, 'http://www.tedxpantheonsorbonne.fr')" href="#">
+        <i class="icon ion-social-twitter"></i>
+        Spread on twitter
+      </a>
+      <a ng-show="imgURI !== undefined" class="item item-icon-left assertive" style="color: #444;" ng-click="sharePicture()" href="#">
+        <i class="icon ion-share"></i>
+        Spread anywhere
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

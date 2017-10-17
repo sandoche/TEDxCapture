@@ -1,10 +1,7 @@
 # TEDxCapture
 
 ## About
-- TEDxCapture App is an open project for TEDx communities in order to Capture and Spread the best moments
-
-## Demo
-- Here is [TEDxPantheonSorbonne Android App](https://play.google.com/store/apps/details?id=com.tedxcapture.tedxpantheonsorbonne)
+- TEDxCapture App is an open source project for TEDx communities in order to Capture and Spread the best moments
 
 ## How to use it
 - Replace "http://www.tedxpantheonsorbonne.fr/capture/" by your image upload server url and replace "XXX" by the server security key in controller.js
